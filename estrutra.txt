@@ -1,0 +1,25 @@
+dist - contém os arquivos de publicação (dist = distribuição)
+/-- assetes/ contém imagens, icones, fontes e etc.
+    /-- fonts/ -> arquivos de fontes
+    /-- icons/ -> arquivos de ícones
+    /-- images/ -> imagens usadas no projeto
+/-- css/ -> arquivos css compilados e minificados
+    /-- style.css -> arquivo compilado e minificado
+/-- js/ -> scripts javascript compilados e minificados
+    /-- app.js -> arquivo js pronto
+/-- index.html -> arquivo principal do site ou projeto
+
+src - contém os arquivos de desenvolvimento (src = source)
+    /-- js/ 
+    /-- vários arquivos 
+    /-- sass/
+        /-- components -> arquivos sass de criação de components
+            /-- cards.scss
+        /-- globals 
+            /-- header.scss 
+            /-- nav.scss
+            /-- main.scss
+        /-- variables 
+            /-- theme.scss
+            /-- colors.scss
+            /-- background.scss
