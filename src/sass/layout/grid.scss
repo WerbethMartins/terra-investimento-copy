@@ -1,0 +1,42 @@
+$colunas: 12;
+$gutter: 1rem;
+$breakpoints: (
+    "sm": 576px,
+    "md": 768px,
+    "lg": 992px,
+    "xl": 1200px
+);
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -($gutter / 2);
+    margin-right: -($gutter / 2);
+}
+
+[class^="col-"]{
+    padding: $gutter / 2;
+    padding-right: $gutter / 2;
+}
+
+@for $i from 1 through $colunas {
+    $width: (100% / $colunas) * $i;
+
+    .col-#{$i}{
+        flex: 0 0 $width;
+        max-width: $width;
+    }
+}
+
+@each $break, $size in $breakpoints{
+    @media (min-width: $size){
+        @for $i from 1 through $colunas {
+            $width: (100% / $colunas) * $i;
+            
+            .col-#{$break}-#{$i}{
+                flex: 0 0 $width;
+                max-width: $width;
+            }
+        }
+    }
+}

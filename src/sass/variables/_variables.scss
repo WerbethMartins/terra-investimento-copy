@@ -1,0 +1,32 @@
+$primary-color: #dd3030;
+$secundary-color: #25b92c;
+$light-color: #ffffff;
+$header-height: 120px;
+$vph: calc(100vh - $header-height);
+$base-font-size: 0.5rem;
+$base-line-height: 10px;
+$theme: (
+    "primary": $primary-color,
+    "secondary": $secundary-color,
+    "light": $light-color
+);
+
+$directions: (
+    "" : "",
+    "t" : "top",
+    "b" : "bottom",
+    "l" : "left",
+    "r" : "right",
+    "x" : ("left", "right"),
+    "y" : ("top", "bottom"),
+);
+
+$spaces: (0,1,2,3,4,5);
+$base: 0.25rem;
+
+$text-align: (
+    "top": "top",
+    "right": "right",
+    "bottom": "bottom",
+    "left": "left",
+);

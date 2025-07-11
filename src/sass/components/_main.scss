@@ -1,0 +1,9 @@
+@use '../variables/variables' as *;
+
+main {
+    width: 100vw;
+    height: $vph;
+    background-image: linear-gradient(rgba(0,0,0, 0.9), rgba(0,0,0, 0.6)), url('/dist//assets/images/bg.jpg');
+    background-position: center;
+    background-size: cover;
+}

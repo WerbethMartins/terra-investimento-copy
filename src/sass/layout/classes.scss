@@ -1,0 +1,65 @@
+@use '../variables/variables' as *;
+
+@for $i from 1 through 10{
+    .fs-#{$i}{
+        font-size: $base-font-size + $i;
+    }
+}
+
+@for $i from 1 through 5{
+    .lh-#{$i}{
+        line-height: $base-line-height * $i;
+    }
+}
+
+@each $nome, $valor in $theme {
+    .text-#{$nome}{
+        color: $valor;
+    }
+};
+
+@each $nome, $valor in $theme {
+    .bg-#{$nome}{
+        color: $valor;
+    }
+};
+
+@each $prefix, $direction in $directions{
+    @each $i in $spaces{
+        $valor: $i * $base;
+
+        @if type-of($direction) == "string" and $direction != '' {
+            .m#{$prefix}#{$i}{
+                margin-#{$direction}: $valor;
+            }
+            .p#{$prefix}#{$i}{
+                margin-#{$direction}: $valor;
+            }
+        }
+        @else if type-of($direction) == 'list'{
+            .m#{$prefix}-#{$i}{
+                @each $d in $direction {
+                    margin-#{$d}: $valor;
+                }
+                @each $d in $direction {
+                    padding-#{$d}: $valor;
+                }
+            }
+        }
+        @else{
+            .m-#{$i}{
+                margin: $valor;
+            }
+            .p-#{$i}{
+                padding: $valor;
+            }
+        }
+    }
+}
+
+@each $nome, $value in text-align {
+    .text-#{$nome} {
+        text-align: $value;
+    }
+}
+
