@@ -1,8 +1,12 @@
 @use '../variables/variables' as *;
 
 .card {
+    border-radius: 10px;
+    background: #2da6d6;
+    background: $success-gradient;
     color: $light-color;
-    background-color: $secundary-color;
     padding: 20px;
     width: 100%;
+    height: 60vh;
+    box-shadow: 1px 1px 3px #000000;
 }

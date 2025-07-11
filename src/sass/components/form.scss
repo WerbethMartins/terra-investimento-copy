@@ -1,0 +1,32 @@
+.form-control{
+    margin-bottom: 0.8rem;
+    padding: 0 0.5rem;
+    
+    .form-input {
+        display: block;
+        font-size: 1.1em;
+        border: 1px solid #000;
+        border-radius: 5px;
+        background-color: #fcfcfce0;
+        color: #000000;
+        padding: 0.5rem;
+        width: 100%;
+        box-shadow: 1px 1px 6px #000;
+        transition: all 0.5s ease-in-out;
+
+        &:focus {
+            outline: none;
+            border-color: #fff;
+            box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.30);
+        }
+
+        &::placeholder {
+            color: lighten(#000000, 30%);
+        }
+
+        .form-label {
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+    }
+}

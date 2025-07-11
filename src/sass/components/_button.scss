@@ -9,8 +9,13 @@
     border: none;
     border-radius: 0.25rem;
     padding: 0.5rem 1rem;
+    box-shadow: 1px 1px 3px #000000;
     transition: all 0.3s ease;
     text-decoration: none;
+}
+
+.btn-enviar {
+    @extend .btn;
 }
 
 @each $nome, $valor in $theme {

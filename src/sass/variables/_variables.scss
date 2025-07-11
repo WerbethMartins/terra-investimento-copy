@@ -1,7 +1,8 @@
 $primary-color: #dd3030;
 $secundary-color: #25b92c;
+$success-gradient: linear-gradient(90deg, rgba(45, 166, 214, 1) 0%, rgba(27, 222, 121, 0.68) 0%, rgba(83, 222, 111, 1) 100%, rgba(237, 221, 83, 0.17) 100%);
 $light-color: #ffffff;
-$header-height: 120px;
+$header-height: 100px;
 $vph: calc(100vh - $header-height);
 $base-font-size: 0.5rem;
 $base-line-height: 10px;

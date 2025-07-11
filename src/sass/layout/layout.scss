@@ -10,14 +10,13 @@
 
 .contents {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     margin: 20px;
     height: $vph;
 
     article {
         padding: 20px;
-        width: 50%;
     }
 
     h2 {

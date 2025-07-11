@@ -689,18 +689,18 @@
 header {
   background-color: #ffffff;
   padding: 25px;
-  height: 120px;
+  height: 100px;
 }
 
 main {
   width: 100vw;
-  height: calc(100vh - 120px);
+  height: calc(100vh - 100px);
   background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.6)), url("/dist//assets/images/bg.jpg");
   background-position: center;
   background-size: cover;
 }
 
-.btn {
+.btn, .btn-enviar {
   display: inline-block;
   cursor: pointer;
   text-align: center;
@@ -709,6 +709,7 @@ main {
   border: none;
   border-radius: 0.25rem;
   padding: 0.5rem 1rem;
+  box-shadow: 1px 1px 3px #000000;
   transition: all 0.3s ease;
   text-decoration: none;
 }
@@ -753,10 +754,14 @@ main {
 }
 
 .card {
+  border-radius: 10px;
+  background: #2da6d6;
+  background: linear-gradient(90deg, rgb(45, 166, 214) 0%, rgba(27, 222, 121, 0.68) 0%, rgb(83, 222, 111) 100%, rgba(237, 221, 83, 0.17) 100%);
   color: #ffffff;
-  background-color: #25b92c;
   padding: 20px;
   width: 100%;
+  height: 60vh;
+  box-shadow: 1px 1px 3px #000000;
 }
 
 .container {
@@ -769,14 +774,13 @@ main {
 
 .contents {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   margin: 20px;
-  height: calc(100vh - 120px);
+  height: calc(100vh - 100px);
 }
 .contents article {
   padding: 20px;
-  width: 50%;
 }
 .contents h2 {
   margin-bottom: 15px;
@@ -801,6 +805,34 @@ main {
   .container {
     max-width: 100%;
   }
+}
+.form-control {
+  margin-bottom: 0.8rem;
+  padding: 0 0.5rem;
+}
+.form-control .form-input {
+  display: block;
+  font-size: 1.1em;
+  border: 1px solid #000;
+  border-radius: 5px;
+  background-color: rgba(252, 252, 252, 0.8784313725);
+  color: #000000;
+  padding: 0.5rem;
+  width: 100%;
+  box-shadow: 1px 1px 6px #000;
+  transition: all 0.5s ease-in-out;
+}
+.form-control .form-input:focus {
+  outline: none;
+  border-color: #fff;
+  box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.3);
+}
+.form-control .form-input::placeholder {
+  color: rgb(76.5, 76.5, 76.5);
+}
+.form-control .form-input .form-label {
+  display: block;
+  margin-bottom: 0.5rem;
 }
 
 /*# sourceMappingURL=style.css.map */
