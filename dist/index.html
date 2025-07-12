@@ -7,13 +7,23 @@
     <title>Terra investimento</title>
 </head>
 <body>
-    <header>
-        <img src="/dist/assets/images/logo.webp" width="150px" alt="Image cabeçalho">
+    <header class="navbar">
+        <div class="navbar-container">
+            <div class="brand">
+                <img src="/dist/assets/images/logo.webp" width="150px" alt="Image cabeçalho">
+            </div>
+            <button id="navbar-toggler" class="navbar-toggler">&#9776;</button>
+            <nav class="navbar-menu">
+                <a href="#home">home</a>
+                <a href="#portfolio">portfolio</a>
+                <a href="#contato">contato</a>
+            </nav>
+        </div>
     </header>
     <main>
         <section class="container">
-            <section class="row contents">
-                <article class="col-12 col-sm-12 col-md-6">
+            <section id="home" class="row contents">
+                <article class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 ajust-height article-1">
                     <h2 class="fs-2 text-light">Conheça a terra dos investimentos e venha para o outro nível</h2>
                     <p class="text-light lh-3">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid blanditiis illum 
@@ -22,7 +32,7 @@
                     </p>
                     <a href="#" class="btn btn-secondary btn-large mt4">Quero participar</a>
                 </article>
-                <article class="col-12 col-sm-12 col-md-6">
+                <article class="col-12 col-sm-12 col-md-12 col-lg-6 col-lx-l6">
                     <div class="card">
                         <h2>
                             Cadastre-se para receber informações, mensagens e ligações de venda de vendedores chatos
@@ -60,6 +70,11 @@
                 </article>
             </section>
         </section>
+        <section id="portfolio" class="row">
+            
+        </section>
+
+        <script src="/dist/js/button-tuggler.js"></script>
     </main>
 </body>
 </html>
